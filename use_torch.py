@@ -40,5 +40,5 @@ new_predictor2.load_state_dict(torch.load('customer_buy_state_dict'))
 import numpy as np
 
 y_cust_42_50000 = new_predictor2(torch.from_numpy(local_scaler.transform(np.array([[40,20000]]))).float())
-y_cust_42_50000
+print(y_cust_42_50000)
 
